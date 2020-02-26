@@ -1,0 +1,30 @@
+.wrapper
+  .chat_main
+    .chat_main__group-info
+      .chat_main__group-info-left
+        .chat_main__group-name
+          TEST
+        .chat_main__group-member
+          member:name
+      .chat_main__group-info-right
+        =link_to "#", class:"chat_main__group-info-right-edit" do
+          Edit
+    .chat_main__message-list
+      .chat_main__message-top
+        .chat_main__message-name
+          masa
+          .chat_main__message-date
+            2019/02/25
+        .chat_main__message-comment
+          おはよう
+    .chat_main__message-form
+      .chat_main__message-input-box
+        .chat_main__message-type
+          %input.chat_main__message-type{:name => "email", :placeholder => "type a message", :type => "email", :value => ""}
+        .chat_main__message-image
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file",class:'input-box__image-file'}
+      .chat_main__message-send
+        =link_to "#" ,class:"chat_main__message-send-in"do
+          Send
