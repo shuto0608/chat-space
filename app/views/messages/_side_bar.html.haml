@@ -1,6 +1,7 @@
 .wrapper
   .side_bar
     .side_bar__user-name
+      = current_user.name
       .top-items
         .top-items__name 
           masa
@@ -9,8 +10,8 @@
             =link_to "#" do
               %i.far.fa-edit
           .top-items__icons-cog
-            =link_to "#" do
-              %i.fas.fa-cog
+            =link_to edit_user_path(current_user) do
+              = icon('fas', 'cog', class: 'icon')
     .side_bar__group-list
       .side_bar__group-list-center
         .side_bar__group-list-center-main

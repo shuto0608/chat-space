@@ -32,13 +32,13 @@
           display: flex;
           justify-content: flex-end;
           text-align: right;
-          // align-items: flex-end;
+          align-items: flex-end;
           &-edit{
             .fa-edit{color: #ffffff;}
             margin-right: 5px;
           }
-          &-cog{
-            .fa-cog{color: #ffffff;}
+          .icon{
+            color: #ffffff;
           }
         }
     }
